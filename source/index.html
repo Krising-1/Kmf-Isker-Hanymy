@@ -4,14 +4,181 @@
     <meta charset="UTF-8">
     <title>KMF и Фонд KMF-Демеу</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/kmf-favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicons/kmf-favicon-32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
+    <link rel="preload" href="fonts/gilroy-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/gilroy-medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/gilroy-semibold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/gilroy-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-bold.woff2" as="font" crossorigin="anonymous">
+    <script src="scripts/main.js" type="module" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
+    <header class="page__header header-main header-main--no-js"> <!-- Убрать для при наличии js header-main--no-js, для открытия навигации добавить класс header-main--menu-open -->
+      <div class="header-main__wrapper main-wrapper">
+        <div class="header-main__logo-container">
+          <div class="header-main__logo-wrapper">
+            <a class="header-main__logo-link" href="#">
+              <picture>
+                <source media="(min-width: 1920px)" type="image/svg+xml" srcset="./images/kmf-logo-desktop.svg" width="125" height="40">
+                <img class="header-main__logo-image" src="./images/kmf-logo-mobile.svg" width="100" height="32" alt="Логотип компании.">
+              </picture>
+            </a>
+            <div class="header-main__language-container">
+              <select class="header-main__language" name="language">
+                <option class="header-main__language-item">Рус</option>
+                <option class="header-main__language-item">Каз</option>
+              </select>
+              <span class="header-main__language-arrow"></span>
+            </div>
+          </div>
+          <button class="header-main__burger" type="button"><span class="visually-hidden">Открыть или закрыть навигацию.</span></button><!-- Добавить для открытого состояния header-main__burger--open -->
+        </div>
+        <nav class="header-main__nav">
+          <ul class="header-main__list">
+            <li class="header-main__item header-main__item--has-menu"><!--Добавить для открытия меню header-main__item--open -->
+              <h2 class="header-main__list-title"><button class="header-main__list-opener">О портале</button></h2>
+              <ul class="header-main__list-inner">
+                <li class="header-main__item-inner header-main__item-inner--subtitle">О портале</li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Продукты КМФ</a>
+                </li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Новости / Анонсы</a>
+                </li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">О программе KMF Isker Hanymy</a>
+                </li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Истории успеха</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-main__item header-main__item--has-menu"><!--Добавить для открытия меню header-main__item--open -->
+              <h2 class="header-main__list-title"><button class="header-main__list-opener">Бизнес</button></h2>
+              <ul class="header-main__list-inner">
+                <li class="header-main__item-inner header-main__item-inner--subtitle">Бизнес</li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Каталог</a>
+                </li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Made in KZ</a>
+                </li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Я социальный предприниматель</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-main__item header-main__item--has-menu"><!--Добавить для открытия меню header-main__item--open -->
+              <h2 class="header-main__list-title"><button class="header-main__list-opener">Обучение</button></h2>
+              <ul class="header-main__list-inner">
+                <li class="header-main__item-inner header-main__item-inner--subtitle">Обучение</li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Наставничество</a>
+                </li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Саморазвитие</a>
+                </li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Здоровье</a>
+                </li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Полезные советы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-main__item header-main__item--has-menu"><!--Добавить для открытия меню header-main__item--open -->
+              <h2 class="header-main__list-title header-main__list-title--open"><button class="header-main__list-opener">Забота о себе</button></h2>
+              <ul class="header-main__list-inner">
+                <li class="header-main__item-inner header-main__item-inner--subtitle">Забота о себе</li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Здоровье</a>
+                </li>
+                <li class="header-main__item-inner">
+                  <a class="header-main__link-inner header-main__link-inner--inner" href="#">Полезные советы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-main__item">
+              <a class="header-main__link-inner header-main__link-inner--award" href="#">Премия KMF Isker hanymy</a>
+            </li>
+            <li class="header-main__item">
+              <a class="header-main__link-inner" href="#">
+                <img class="header-main__inner-logo" src="./images/kmf-demey-logo.svg" width="50" height="52" alt="Логотип компании KMF-Демеу.">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page__main">
+      <section class="hero">
+        <div class="hero__wrapper main-wrapper">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width:1920px)" type="image/webp" srcset="images/kmf-hero-ofice-desktop@1x.webp 1x, images/kmf-hero-ofice-desktop@2x.webp 2x" width="851" height="742">
+                  <source type="image/webp" srcset="images/kmf-hero-ofice-mobile@1x.webp 1x, images/kmf-hero-ofice-mobile@2x.webp 2x" width="360" height="314">
+                  <source media="(min-width:1920px)" type="image/jpeg" srcset="images/kmf-hero-ofice-desktop@1x.jpg 1x, images/kmf-hero-ofice-desktop@2x.jpg 2x" width="851" height="742">
+                  <img class="hero__image" src="images/kmf-hero-ofice-mobile@1x.jpg" srcset="images/kmf-hero-ofice-mobile@2x.jpg 2x" width="360" height="314" alt="Две девушки работают за компьютером в уютном офисе." loading="lazy">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width:1920px)" type="image/webp" srcset="images/kmf-hero-space-desktop@1x.webp 1x, images/kmf-hero-space-desktop@2x.webp 2x" width="851" height="742">
+                  <source type="image/webp" srcset="images/kmf-hero-space-mobile@1x.webp 1x, images/kmf-hero-space-mobile@2x.webp 2x" width="360" height="314">
+                  <source media="(min-width:1920px)" type="image/jpeg" srcset="images/kmf-hero-space-desktop@1x.jpg 1x, images/kmf-hero-space-desktop@2x.jpg 2x" width="851" height="742">
+                  <img class="hero__image" src="images/kmf-hero-space-mobile@1x.jpg" srcset="images/kmf-hero-space-mobile@2x.jpg 2x" width="360" height="314" alt="Две девушки работают за компьютером в уютном офисе." loading="lazy">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width:1920px)" type="image/webp" srcset="images/kmf-hero-window-desktop@1x.webp 1x, images/kmf-hero-window-desktop@2x.webp 2x" width="851" height="742">
+                  <source type="image/webp" srcset="images/kmf-hero-window-mobile@1x.webp 1x, images/kmf-hero-window-mobile@2x.webp 2x" width="360" height="314">
+                  <source media="(min-width:1920px)" type="image/jpeg" srcset="images/kmf-hero-window-desktop@1x.jpg 1x, images/kmf-hero-window-desktop@2x.jpg 2x" width="851" height="742">
+                  <img class="hero__image" src="images/kmf-hero-window-mobile@1x.jpg" srcset="images/kmf-hero-window-mobile@2x.jpg 2x" width="360" height="314" alt="Две девушки работают за компьютером в уютном офисе." loading="lazy">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width:1920px)" type="image/webp" srcset="images/kmf-hero-computer-desktop@1x.webp 1x, images/kmf-hero-computer-desktop@2x.webp 2x" width="851" height="742">
+                  <source type="image/webp" srcset="images/kmf-hero-computer-mobile@1x.webp 1x, images/kmf-hero-computer-mobile@2x.webp 2x" width="360" height="314">
+                  <source media="(min-width:1920px)" type="image/jpeg" srcset="images/kmf-hero-computer-desktop@1x.jpg 1x, images/kmf-hero-computer-desktop@2x.jpg 2x" width="851" height="742">
+                  <img class="hero__image" src="images/kmf-hero-computer-mobile@1x.jpg" srcset="images/kmf-hero-computer-mobile@2x.jpg 2x" width="360" height="314" alt="Две девушки работают за компьютером в уютном офисе." loading="lazy">
+                </picture>
+              </div>
+
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="hero__content-wrapper">
+            <div class="swiper-pagination"></div>
+            <h1 class="hero__title">KMF <br>и Фонд&nbsp;KMF-Демеу</h1>
+            <p class="hero__description">Для нас важно поддерживать социальное предпринимательство</p>
+            <a class="hero__link-main">Подробнее</a>
+            <div class="hero__button-wrapper">
+              <button class="hero__button hero__button--left" type="button"><span class="visually-hidden">Влево.</span></button>
+              <button class="hero__button hero__button--right" type="button"><span class="visually-hidden">Вправо.</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="page__footer footer-main">
+
+    </footer>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

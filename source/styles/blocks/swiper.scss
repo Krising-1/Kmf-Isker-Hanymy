@@ -1,0 +1,111 @@
+.swiper {
+  min-height: 360px;
+  margin-bottom: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 851px;
+    margin-bottom: 0;
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: -52px;
+  height: fit-content;
+
+  @media (min-width: $desktop-width) {
+    top: calc(100% - 35px);
+    width: fit-content;
+    left: 16%;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 4px;
+  width: 4px;
+  height: 4px;
+  background-color: $base-secondary;
+  opacity: 1;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 4px;
+  width: 4px;
+  height: 4px;
+  background-color: $base-secondary;
+  opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 22px;
+  height: 22px;
+  border: 1px solid $base-primary;
+  background-color: transparent;
+  border-radius: 50%;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: $base-primary;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+//   width: 22px;
+//   height: 22px;
+//   border: 1px solid $base-primary;
+//   background-color: transparent;
+//   border-radius: 50%;
+//   position: relative;
+
+//   &::after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     width: 8px;
+//     height: 8px;
+//     background-color: $base-primary;
+//     border-radius: 50%;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+// }
+
+.swiper-pagination {
+
+}
+
+.swiper-backface-hidden .swiper-slide {
+  width: 851px;
+}

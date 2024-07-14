@@ -1,0 +1,9 @@
+.main-wrapper {
+  box-sizing: border-box;
+  width: 360px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 1920px;
+  }
+}

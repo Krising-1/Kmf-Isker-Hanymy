@@ -1,7 +1,16 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixin.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "../vendor/swiper/swiper-bundle.min.css";
+@import "./blocks/page.scss";
+@import "./blocks/main-wrapper.scss";
+@import "./blocks/header-main.scss";
+@import "./blocks/swiper.scss";
+@import "./blocks/hero.scss";
+
+// @import "./blocks/footer-main.scss";

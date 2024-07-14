@@ -1,1 +1,10 @@
 /* здесь подключите шрифты */
+$primary-font: "Gilroy", "Arial", sans-serif;
+$secondary-font: "Inter", "Arial", sans-serif;
+
+@include font-face("Gilroy", 400, normal, url("../../fonts/gilroy-regular.woff2") format("woff2"));
+@include font-face("Gilroy", 500, normal, url("../../fonts/gilroy-medium.woff2") format("woff2"));
+@include font-face("Gilroy", 600, normal, url("../../fonts/gilroy-semibold.woff2") format("woff2"));
+@include font-face("Gilroy", 700, normal, url("../../fonts/gilroy-bold.woff2") format("woff2"));
+@include font-face("Inter", 400, normal, url("../../fonts/inter-regular.woff2") format("woff2"));
+@include font-face("Inter", 700, normal, url("../../fonts/inter-bold.woff2") format("woff2"));
