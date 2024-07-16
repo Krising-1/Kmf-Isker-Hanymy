@@ -1,6 +1,7 @@
-.swiper {
+.swiper-hero {
   min-height: 360px;
   margin-bottom: 18px;
+  border-radius: 40px;
 
   @media (min-width: $desktop-width) {
     width: 851px;
@@ -11,21 +12,21 @@
   }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-button-prev--hero,
+.swiper-button-next--hero {
   display: none;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets {
-  position: relative;
-  z-index: 2;
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+.swiper-button-prev--business,
+.swiper-button-next--business {
+  display: none;
 }
 
-.swiper-pagination-bullets.swiper-pagination-horizontal {
+.swiper-button-next--business {
+  right: -10px;
+}
+
+.swiper-pagination--hero.swiper-pagination-bullets.swiper-pagination-horizontal {
   top: -52px;
   height: fit-content;
 
@@ -33,6 +34,19 @@
     top: calc(100% - 35px);
     width: fit-content;
     left: 16%;
+  }
+}
+
+.swiper-pagination--business.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    bottom: auto;
   }
 }
 
@@ -80,32 +94,58 @@
   }
 }
 
-// .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
-//   width: 22px;
-//   height: 22px;
-//   border: 1px solid $base-primary;
-//   background-color: transparent;
-//   border-radius: 50%;
-//   position: relative;
-
-//   &::after {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     width: 8px;
-//     height: 8px;
-//     background-color: $base-primary;
-//     border-radius: 50%;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//   }
-// }
-
-.swiper-pagination {
-
-}
-
 .swiper-backface-hidden .swiper-slide {
   width: 851px;
+}
+
+.swiper-slide--business {
+  display: grid;
+
+  height: 100%;
+}
+
+.swiper__button-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: fit-content;
+    position: relative;
+    align-items: center;
+    top: 32px;
+    left: calc(42% + 6px);
+  }
+}
+
+.swiper-button-business {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff0f5;
+    background-image: url("../../icons/stack.svg#kmf-hero-arrow");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:focus-visible,
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+}
+
+
+.swiper-button-business--left {
+  transform: rotate(180deg);
+  margin-right: 11px;
+}
+
+.swiper-button-business--right {
+  margin-left: 11px;
 }

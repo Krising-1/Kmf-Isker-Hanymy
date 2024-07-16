@@ -119,7 +119,7 @@
     <main class="page__main">
       <section class="hero">
         <div class="hero__wrapper main-wrapper">
-          <div class="swiper">
+          <div class="swiper swiper-hero">
             <div class="swiper-wrapper">
 
               <div class="swiper-slide">
@@ -160,11 +160,11 @@
 
             </div>
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev swiper-button-prev--hero"></div>
+            <div class="swiper-button-next swiper-button-next--hero"></div>
           </div>
           <div class="hero__content-wrapper">
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination swiper-pagination--hero"></div>
             <h1 class="hero__title">KMF <br>и Фонд&nbsp;KMF-Демеу</h1>
             <p class="hero__description">Для нас важно поддерживать социальное предпринимательство</p>
             <a class="hero__link-main">Подробнее</a>
@@ -172,6 +172,303 @@
               <button class="hero__button hero__button--left" type="button"><span class="visually-hidden">Влево.</span></button>
               <button class="hero__button hero__button--right" type="button"><span class="visually-hidden">Вправо.</span></button>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="program">
+        <div class="program__wrapper main-wrapper">
+          <h2 class="visually-hidden">Портал KMF Isker hanymy.</h2>
+          <p class="program__description">Друзья! <br>Представляем Вашему вниманию портал KMF Isker hanymy – платформу для получения актуальной и полезной информации для Вас и Вашего бизнеса</p>
+          <a class="program__link" href="#">О программе</a>
+        </div>
+      </section>
+      <section class="stories">
+        <div class="stories__wrapper main-wrapper">
+          <h2 class="stories__title">Истории успеха</h2>
+          <div class="stories__interview-wrapper">
+            <h3 class="stories__sub-title">Алимбекова Бакыт - Салон эксклюзивных шляп "Elegant"</h3>
+            <picture>
+              <source media="(min-width: 1920px)" type="image/webp" srcset="images/stories-elegant-desktop@1x.webp 1x, images/stories-elegant-desktop@2x.webp 2x" width="647" height="503">
+              <source type="image/webp" srcset="images/stories-elegant-mobile@1x.webp 1x, images/stories-elegant-mobile@2x.webp 2x" width="453" height="351">
+              <source media="(min-width: 1920px)" type="image/png" srcset="images/stories-elegant-desktop@1x.png 1x, images/stories-elegant-desktop@2x.png 2x" width="647" height="503">
+              <img class="stories__image" src="images/stories-elegant-mobile@1x.png" srcset="images/stories-elegant-mobile@2x.png 2x" width="453" height="351" alt="Коллаж из фотографий салона Elegant." loading="lazy">
+            </picture>
+            <p class="stories__text">Салон эксклюзивных шляп Elegant работает на казахстанском рынке с 1999 года. Бизнес основала Алимбекова Бакыт Калиевна и ее коллеги по цеху. Компания выпускает шляпы, головные уборы для силовых структур, и с недавних времен дизайнерскую верхнюю одежду.</p>
+            <p class="stories__text">Мы побывали в гостях в салоне Elegant и узнали о том, как происходит создание и сборка индивидуальных шляп, с какими трудностями столкнулась компания в 2020 году и что она планирует на ближайшее будущее.</p>
+            <a class="stories__link" href="#">Читать интервью</a>
+          </div>
+        </div>
+      </section>
+      <section class="business">
+        <div class="business__wrapper main-wrapper">
+          <h2 class="business__title">Бизнес</h2>
+
+          <div class="swiper swiper-business">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper swiper-wrapper-business">
+              <!-- Slides -->
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-luxservice-desktop@1x.webp 1x, images/business-luxservice-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-luxservice-mobile@1x.webp 1x, images/business-luxservice-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-luxservice-desktop@1x.jpg 1x, images/business-luxservice-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-luxservice-mobile@1x.jpg" srcset="images/business-luxservice-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                    <h3 class="business__slide-title">Услуги для автомобилей <br>"Lux-service"</h3>
+                  </a>
+                  <address class="business__slide-address">Тараз, Абая 291</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">Ателье для автомобилей "Lux-service" предоставляют пошив чехлов, перетяжка салона, EV...</summary>
+                    <p class="business__description">Ателье для автомобилей "Lux-service" предоставляют пошив чехлов, перетяжка салона, EVA полики и шумоизоляцию.</p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-agro-desktop@1x.webp 1x, images/business-agro-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-agro-mobile@1x.webp 1x, images/business-agro-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-agro-desktop@1x.jpg 1x, images/business-agro-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-agro-mobile@1x.jpg" srcset="images/business-agro-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                    <h3 class="business__slide-title">Агробизнес - животноводство, пчеловодство</h3>
+                  </a>
+                  <address class="business__slide-address">с. Лепси, Алматинская область</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">Смешанное сельское хозяйство - бизнес, который занимается выращиванием р...</summary>
+                    <p class="business__description">Смешанное сельское хозяйство - бизнес, который занимается выращиванием растений (растениеводство) и&nbsp;разведением животных</p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-merey-desktop@1x.webp 1x, images/business-merey-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-merey-mobile@1x.webp 1x, images/business-merey-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-merey-desktop@1x.jpg 1x, images/business-merey-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-merey-mobile@1x.jpg" srcset="images/business-merey-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                    <h3 class="business__slide-title">Семейная столовая "Мерей"</h3>
+                  </a>
+                  <address class="business__slide-address">Сарканд, Толе би 15/2</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">В столовой "Мерей" можно насладиться вкуснейшим завтраком или сытным обедо...</summary>
+                    <p class="business__description">В столовой "Мерей" можно насладиться вкуснейшим завтраком или сытным обедом, недорогим полдником и заботливо приготовленным ужином.</p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-ramen-desktop@1x.webp 1x, images/business-ramen-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-ramen-mobile@1x.webp 1x, images/business-ramen-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-ramen-desktop@1x.jpg 1x, images/business-ramen-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-ramen-mobile@1x.jpg" srcset="images/business-ramen-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                    <h3 class="business__slide-title">Раменная "Ichiraku"</h3>
+                  </a>
+                  <address class="business__slide-address">Funatsu, Fujikawaguchiko</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">Это ресторан, созданный по мотивам раменного ресторана, который часто...</summary>
+                    <p class="business__description">Это ресторан, созданный по мотивам раменного ресторана, который часто посещают герои сериала NARUTO "Ичираку". Мы приготовили множество блюд, включая оригинальные раменные блюда, связанные с персонажами сериала, а также напитки и десерты с узнаваемыми образами из сериала.</p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-sad-desktop@1x.webp 1x, images/business-sad-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-sad-mobile@1x.webp 1x, images/business-sad-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-sad-desktop@1x.jpg 1x, images/business-sad-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-sad-mobile@1x.jpg" srcset="images/business-sad-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                    <h3 class="business__slide-title">Садоводческий Магазин "Тяпка"</h3>
+                  </a>
+                  <address class="business__slide-address">Санкт-Петербург, 196158</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">"Тяпка" - это гипермаркет товаров для дачи и дома. У нас вы можете купить...</summary>
+                    <p class="business__description">"Тяпка" - это гипермаркет товаров для дачи и дома. У нас вы можете купить больше 500 000 товаров для огорода и сада: от хозяйственного инвентаря до садовой мебели.</p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-husbandry-desktop@1x.webp 1x, images/business-husbandry-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-husbandry-mobile@1x.webp 1x, images/business-husbandry-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-husbandry-desktop@1x.jpg 1x, images/business-husbandry-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-husbandry-mobile@1x.jpg" srcset="images/business-husbandry-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                    <h3 class="business__slide-title">Фермерское хозяйство "Буренка"</h3>
+                  </a>
+                  <address class="business__slide-address">Колыванское шоссе 51 км, 1</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">"Буренка" - занимается разводом крупного рогатого скота и высококачественного...</summary>
+                    <p class="business__description">"Буренка" - занимается разводом крупного рогатого скота и высококачественного семенного материала, за 2020 год реализовано 2656 тонн семенного материала, в 2021 году – 2773 тонны.</p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-bar-desktop@1x.webp 1x, images/business-bar-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-bar-mobile@1x.webp 1x, images/business-bar-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-bar-desktop@1x.jpg 1x, images/business-bar-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-bar-mobile@1x.jpg" srcset="images/business-bar-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                  </a>
+                  <h3 class="business__slide-title">Бар "Рыжий Рорри"</h3>
+                  <address class="business__slide-address">Социалистическая 21</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">«Рыжий Рорри» — это крафтовой бар недалеко от станции метро «Лиговский...</summary>
+                    <p class="business__description">«Рыжий Рорри» — это крафтовой бар недалеко от станции метро «Лиговский проспект». Здесь, в апарт-отеле Yes мы наливаем два десятка вариантов пива и настоек, а по технологии су-вид готовим сочные мясные блюда. </p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-fish-desktop@1x.webp 1x, images/business-fish-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-fish-mobile@1x.webp 1x, images/business-fish-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-fish-desktop@1x.jpg 1x, images/business-fish-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-fish-mobile@1x.jpg" srcset="images/business-fish-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                    <h3 class="business__slide-title">Магазин для рыболовов "Карась"</h3>
+                  </a>
+                  <address class="business__slide-address">Обводного канала, 163</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">Ассортимент магазина "Карась" включит рыболовные снасти основных видов...</summary>
+                    <p class="business__description">Ассортимент магазина "Карась" включит рыболовные снасти основных видов рыбной ловли. Удочки на любой вкус и цвет!</p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-grumer-desktop@1x.webp 1x, images/business-grumer-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-grumer-mobile@1x.webp 1x, images/business-grumer-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-grumer-desktop@1x.jpg 1x, images/business-grumer-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-grumer-mobile@1x.jpg" srcset="images/business-grumer-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                    <h3 class="business__slide-title">Салон "Наш ЗВЕРОЛАШ"</h3>
+                  </a>
+                  <address class="business__slide-address">Адмиралтейская, 45</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">Зоосалон «Наш ЗВЕРОЛАШ» окажет весь комплекс гигиенических процедур от...</summary>
+                    <p class="business__description">Зоосалон «Наш ЗВЕРОЛАШ» окажет весь комплекс гигиенических процедур от чистки ушей животного до купания, стрижки коготков и создания симпатичных причесок. Соблюдение гигиены и содержание шерсти животного в чистоте являются залогом его долгого здоровья и прекрасного настроения.</p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-samurai-desktop@1x.webp 1x, images/business-samurai-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-samurai-mobile@1x.webp 1x, images/business-samurai-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-samurai-desktop@1x.jpg 1x, images/business-samurai-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-samurai-mobile@1x.jpg" srcset="images/business-samurai-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                    <h3 class="business__slide-title">Школа "Gaijin"</h3>
+                  </a>
+                  <address class="business__slide-address">Урума, Окинава</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">Катана - это японский клинок, а также традиционное оружие элитного воинского...</summary>
+                    <p class="business__description">Катана - это японский клинок, а также традиционное оружие элитного воинского сословия - самураев. Полноконтактное фехтование на протектированных стальных моделях японских мечей эпохи самураев.</p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-school-desktop@1x.webp 1x, images/business-school-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-school-mobile@1x.webp 1x, images/business-school-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-school-desktop@1x.jpg 1x, images/business-school-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-school-mobile@1x.jpg" srcset="images/business-school-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                    <h3 class="business__slide-title">Школа английского языка "Инглекс"</h3>
+                  </a>
+                  <address class="business__slide-address">Малый Знаменский пер.</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">Языковая школа — это образовательная организация, которая специализируется...</summary>
+                    <p class="business__description">Языковая школа — это образовательная организация, которая специализируется на онлайн-курсах в области изучения иностранных языков. Её отличие от института репетиторства — в том, что она работает с заранее подготовленными и систематизированными учебными программами, которые преследуют определённые темы.</p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--business">
+                <div class="business__slide-wrapper">
+                  <a class="business__slide-link" href="#">
+                    <div class="business__slide-image-wrapper">
+                      <picture>
+                        <source media="(min-width: 1920px)" type="image/webp" srcset="images/business-sushi-desktop@1x.webp 1x, images/business-sushi-desktop@2x.webp 2x" width="360" height="398">
+                        <source type="image/webp" srcset="images/business-sushi-mobile@1x.webp 1x, images/business-sushi-mobile@2x.webp 2x" width="240" height="260">
+                        <source media="(min-width: 1920px)" type="image/jpeg" srcset="images/business-sushi-desktop@1x.jpg 1x, images/business-sushi-desktop@2x.jpg 2x" width="360" height="398">
+                        <img class="business__slide-image" src="images/business-sushi-mobile@1x.jpg" srcset="images/business-sushi-mobile@2x.jpg 2x" width="240" height="260" alt="Бабушка на фоне рекламы машины." loading="lazy">
+                      </picture>
+                    </div>
+                    <h3 class="business__slide-title">Суши бар "Fugu"</h3>
+                  </a>
+                  <address class="business__slide-address">Титибу, Сайтама</address>
+                  <details class="business__description-details">
+                    <summary class="business__description-short">Суши бар - это современное заведение, ориентированное на настоящих ценителей яп...</summary>
+                    <p class="business__description">Суши бар - это современное заведение, ориентированное на настоящих ценителей японской кухни, способных по-настоящему дать оценку качеству суши и роллов, способных по-настоящему дать оценку качеству суши и роллов</p>
+                  </details>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev swiper-button-prev--business"></div>
+              <div class="swiper-button-next swiper-button-next--business"></div>
+
+            </div>
+
+          </div>
+          <div class="swiper__button-wrapper">
+            <button class="swiper-button-business swiper-button-business--left" type="button"><span class="visually-hidden">Влево.</span></button>
+            <div class="swiper-pagination swiper-pagination--business"></div>
+            <button class="swiper-button-business swiper-button-business--right" type="button"><span class="visually-hidden">Вправо.</span></button>
           </div>
         </div>
       </section>

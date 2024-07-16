@@ -1,31 +1,39 @@
-const buttonLeft = document.querySelector('.hero__button--left');
-const buttonRight = document.querySelector('.hero__button--right');
-const buttonLeftSlider = document.querySelector('.swiper-button-prev');
-const buttonRightSlider = document.querySelector('.swiper-button-next');
+const buttonLeftHero = document.querySelector('.hero__button--left');
+const buttonRightHero = document.querySelector('.hero__button--right');
+const buttonLeftHeroPrimary = document.querySelector('.swiper-button-prev--hero');
+const buttonRightHeroPrimary = document.querySelector('.swiper-button-next--hero');
+const buttonLeftBusinessPrimary = document.querySelector('.swiper-button-prev--business');
+const buttonRightBusinessPrimary = document.querySelector('.swiper-button-next--business');
+const buttonLeftBusiness = document.querySelector('.swiper-button-business--left');
+const buttonRightBusiness = document.querySelector('.swiper-button-business--right');
 
-buttonLeft.addEventListener('click', () => {
-  buttonLeftSlider.click();
-});
+const buttonRelocation = (fromButton, toButton) => {
+  fromButton.addEventListener('click', () => {
+    toButton.click();
+  });
+};
 
-buttonRight.addEventListener('click', () => {
-  buttonRightSlider.click();
-});
+console.log(buttonLeftBusinessPrimary);
 
+buttonRelocation(buttonRightHero, buttonRightHeroPrimary);
+buttonRelocation(buttonLeftHero, buttonLeftHeroPrimary);
+buttonRelocation(buttonLeftBusiness, buttonLeftBusinessPrimary);
+buttonRelocation(buttonRightBusiness, buttonRightBusinessPrimary);
 
-const initSwiper = () => {
+const initHeroSwiper = () => {
   // eslint-disable-next-line no-undef
-  new Swiper('.swiper', {
-    speed: 250,
+  new Swiper('.swiper-hero', {
+    speed: 500,
     spaceBetween: 0,
     loop: true,
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next--hero',
+      prevEl: '.swiper-button-prev--hero',
     },
 
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination--hero',
       type: 'bullets',
       clickable: true,
     },
@@ -38,4 +46,33 @@ const initSwiper = () => {
   });
 };
 
-export { initSwiper };
+const initBusinessSwiper = () => {
+  // eslint-disable-next-line no-undef
+  new Swiper('.swiper-business', {
+    speed: 800,
+    spaceBetween: 24,
+    loop: true,
+    width: 240,
+
+    navigation: {
+      nextEl: '.swiper-button-next--business',
+      prevEl: '.swiper-button-prev--business',
+    },
+
+    pagination: {
+      el: '.swiper-pagination--business',
+      type: 'bullets',
+      clickable: true,
+    },
+
+    breakpoints: {
+      1920: {
+        width: 1128,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+    }
+  });
+};
+
+export { initHeroSwiper, initBusinessSwiper};

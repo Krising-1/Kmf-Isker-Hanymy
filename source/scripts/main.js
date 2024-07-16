@@ -1,8 +1,11 @@
 /* в этот файл добавляет скрипты*/
 
 import { burgerToggle, innerListOpener } from './navigation.js';
-import { initSwiper } from './swiper-hero.js';
+import { initHeroSwiper, initBusinessSwiper } from './swiper-hero.js';
+import './business-text.js';
+
 
 burgerToggle();
 innerListOpener();
-initSwiper();
+initHeroSwiper();
+initBusinessSwiper();
