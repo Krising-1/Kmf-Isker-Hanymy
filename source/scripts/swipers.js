@@ -13,8 +13,6 @@ const buttonRelocation = (fromButton, toButton) => {
   });
 };
 
-console.log(buttonLeftBusinessPrimary);
-
 buttonRelocation(buttonRightHero, buttonRightHeroPrimary);
 buttonRelocation(buttonLeftHero, buttonLeftHeroPrimary);
 buttonRelocation(buttonLeftBusiness, buttonLeftBusinessPrimary);
@@ -75,4 +73,49 @@ const initBusinessSwiper = () => {
   });
 };
 
-export { initHeroSwiper, initBusinessSwiper};
+const initEducationSwiper = () => {
+  // eslint-disable-next-line no-undef
+  new Swiper('.swiper--education', {
+    speed: 800,
+    spaceBetween: 16,
+    loop: true,
+    width: 240,
+
+    breakpoints: {
+      1920: {
+        width: 1128,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 24,
+      },
+    }
+  });
+};
+
+const initNewsSwiper = () => {
+  // eslint-disable-next-line no-undef
+  new Swiper('.swiper--news', {
+    speed: 800,
+    spaceBetween: 16,
+    loop: true,
+    width: 264,
+
+    breakpoints: {
+      1920: {
+        width: 1128,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 24,
+      },
+    }
+  });
+};
+
+const initAllSliders = () => {
+  initHeroSwiper();
+  initBusinessSwiper();
+  initEducationSwiper();
+  initNewsSwiper();
+};
+
+export { initAllSliders };
