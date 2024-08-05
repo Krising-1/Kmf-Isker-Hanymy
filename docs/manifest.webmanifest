@@ -1,0 +1,8 @@
+{
+  "icons": [
+    { "src": "favicons/kmf-favicon-180.png", "type": "image/png", "sizes": "180x180" },
+    { "src": "favicons/kmf-favicon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "favicons/kmf-favicon-256.png", "type": "image/png", "sizes": "256x256" },
+    { "src": "favicons/kmf-favicon-512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}

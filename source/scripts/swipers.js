@@ -20,7 +20,7 @@ buttonRelocation(buttonRightBusiness, buttonRightBusinessPrimary);
 
 const initHeroSwiper = () => {
   // eslint-disable-next-line no-undef
-  new Swiper('.swiper-hero', {
+  new Swiper('.swiper--hero', {
     speed: 500,
     spaceBetween: 0,
     loop: true,
@@ -46,7 +46,7 @@ const initHeroSwiper = () => {
 
 const initBusinessSwiper = () => {
   // eslint-disable-next-line no-undef
-  new Swiper('.swiper-business', {
+  new Swiper('.swiper--business', {
     speed: 800,
     spaceBetween: 24,
     loop: true,

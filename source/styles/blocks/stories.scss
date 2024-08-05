@@ -84,5 +84,14 @@
   @media (min-width: $desktop-width) {
     width: 161px;
     margin: 0;
+
+    &:hover,
+    &:focus-visible {
+      background-color: #cd1ba5;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }

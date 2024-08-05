@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <title>KMF и Фонд KMF-Демеу</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Представляем Вашему вниманию портал KMF Isker hanymy – платформу для получения актуальной и полезной информации для Вас и Вашего бизнеса">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/kmf-favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicons/kmf-favicon-32.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preload" href="fonts/gilroy-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/gilroy-medium.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/gilroy-semibold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/gilroy-bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/inter-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/inter-bold.woff2" as="font" crossorigin="anonymous">
-    <script src="scripts/main.js" type="module" defer></script>
+    <link rel="preload" href="fonts/gilroy-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/gilroy-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/gilroy-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/gilroy-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
-    <header class="page__header header-main header-main--no-js"> <!-- Убрать для при наличии js header-main--no-js, для открытия навигации добавить класс header-main--menu-open -->
+    <header class="page__header header-main header-main--no-js">
       <div class="header-main__wrapper main-wrapper">
         <div class="header-main__logo-container">
           <div class="header-main__logo-wrapper">
@@ -30,19 +30,19 @@
               </picture>
             </a>
             <div class="header-main__language-container">
-              <select class="header-main__language" name="language">
-                <option class="header-main__language-item">Рус</option>
-                <option class="header-main__language-item">Каз</option>
+              <select class="header-main__language" aria-label="Выбор языка." name="language">
+                <option class="header-main__language-item" aria-label="Русский язык.">Рус</option>
+                <option class="header-main__language-item" aria-label="Казахский язык.">Каз</option>
               </select>
               <span class="header-main__language-arrow"></span>
             </div>
           </div>
-          <button class="header-main__burger" type="button"><span class="visually-hidden">Открыть или закрыть навигацию.</span></button><!-- Добавить для открытого состояния header-main__burger--open -->
+          <button class="header-main__burger" type="button"><span class="visually-hidden">Открыть или закрыть навигацию.</span></button>
         </div>
         <nav class="header-main__nav">
           <ul class="header-main__list">
-            <li class="header-main__item header-main__item--has-menu"><!--Добавить для открытия меню header-main__item--open -->
-              <h2 class="header-main__list-title"><button class="header-main__list-opener">О портале</button></h2>
+            <li class="header-main__item header-main__item--has-menu">
+              <h2 class="header-main__list-title"><button class="header-main__list-opener" type="button">О портале</button></h2>
               <ul class="header-main__list-inner">
                 <li class="header-main__item-inner header-main__item-inner--subtitle">О портале</li>
                 <li class="header-main__item-inner">
@@ -59,8 +59,8 @@
                 </li>
               </ul>
             </li>
-            <li class="header-main__item header-main__item--has-menu"><!--Добавить для открытия меню header-main__item--open -->
-              <h2 class="header-main__list-title"><button class="header-main__list-opener">Бизнес</button></h2>
+            <li class="header-main__item header-main__item--has-menu">
+              <h2 class="header-main__list-title"><button class="header-main__list-opener"  type="button">Бизнес</button></h2>
               <ul class="header-main__list-inner">
                 <li class="header-main__item-inner header-main__item-inner--subtitle">Бизнес</li>
                 <li class="header-main__item-inner">
@@ -74,8 +74,8 @@
                 </li>
               </ul>
             </li>
-            <li class="header-main__item header-main__item--has-menu"><!--Добавить для открытия меню header-main__item--open -->
-              <h2 class="header-main__list-title"><button class="header-main__list-opener">Обучение</button></h2>
+            <li class="header-main__item header-main__item--has-menu">
+              <h2 class="header-main__list-title"><button class="header-main__list-opener"  type="button">Обучение</button></h2>
               <ul class="header-main__list-inner">
                 <li class="header-main__item-inner header-main__item-inner--subtitle">Обучение</li>
                 <li class="header-main__item-inner">
@@ -92,8 +92,8 @@
                 </li>
               </ul>
             </li>
-            <li class="header-main__item header-main__item--has-menu"><!--Добавить для открытия меню header-main__item--open -->
-              <h2 class="header-main__list-title header-main__list-title--open"><button class="header-main__list-opener">Забота о себе</button></h2>
+            <li class="header-main__item header-main__item--has-menu">
+              <h2 class="header-main__list-title header-main__list-title--open"><button class="header-main__list-opener"  type="button">Забота о себе</button></h2>
               <ul class="header-main__list-inner">
                 <li class="header-main__item-inner header-main__item-inner--subtitle">Забота о себе</li>
                 <li class="header-main__item-inner">
@@ -119,19 +119,19 @@
     <main class="page__main">
       <section class="hero">
         <div class="hero__wrapper main-wrapper">
-          <div class="swiper swiper-hero">
-            <div class="swiper-wrapper">
+          <div class="swiper swiper--hero">
+            <div class="swiper-wrapper swiper-wrapper--hero">
 
-              <div class="swiper-slide">
+              <div class="swiper-slide swiper-slide--hero">
                 <picture>
                   <source media="(min-width:1920px)" type="image/webp" srcset="images/kmf-hero-ofice-desktop@1x.webp 1x, images/kmf-hero-ofice-desktop@2x.webp 2x" width="851" height="742">
                   <source type="image/webp" srcset="images/kmf-hero-ofice-mobile@1x.webp 1x, images/kmf-hero-ofice-mobile@2x.webp 2x" width="360" height="314">
                   <source media="(min-width:1920px)" type="image/jpeg" srcset="images/kmf-hero-ofice-desktop@1x.jpg 1x, images/kmf-hero-ofice-desktop@2x.jpg 2x" width="851" height="742">
-                  <img class="hero__image" src="images/kmf-hero-ofice-mobile@1x.jpg" srcset="images/kmf-hero-ofice-mobile@2x.jpg 2x" width="360" height="314" alt="Две девушки работают за компьютером в уютном офисе." loading="lazy">
+                  <img class="hero__image" src="images/kmf-hero-ofice-mobile@1x.jpg" srcset="images/kmf-hero-ofice-mobile@2x.jpg 2x" width="360" height="314" alt="Две девушки работают за компьютером в уютном офисе.">
                 </picture>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide swiper-slide--hero">
                 <picture>
                   <source media="(min-width:1920px)" type="image/webp" srcset="images/kmf-hero-space-desktop@1x.webp 1x, images/kmf-hero-space-desktop@2x.webp 2x" width="851" height="742">
                   <source type="image/webp" srcset="images/kmf-hero-space-mobile@1x.webp 1x, images/kmf-hero-space-mobile@2x.webp 2x" width="360" height="314">
@@ -140,7 +140,7 @@
                 </picture>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide swiper-slide--hero">
                 <picture>
                   <source media="(min-width:1920px)" type="image/webp" srcset="images/kmf-hero-window-desktop@1x.webp 1x, images/kmf-hero-window-desktop@2x.webp 2x" width="851" height="742">
                   <source type="image/webp" srcset="images/kmf-hero-window-mobile@1x.webp 1x, images/kmf-hero-window-mobile@2x.webp 2x" width="360" height="314">
@@ -149,7 +149,7 @@
                 </picture>
               </div>
 
-              <div class="swiper-slide">
+              <div class="swiper-slide swiper-slide--hero">
                 <picture>
                   <source media="(min-width:1920px)" type="image/webp" srcset="images/kmf-hero-computer-desktop@1x.webp 1x, images/kmf-hero-computer-desktop@2x.webp 2x" width="851" height="742">
                   <source type="image/webp" srcset="images/kmf-hero-computer-mobile@1x.webp 1x, images/kmf-hero-computer-mobile@2x.webp 2x" width="360" height="314">
@@ -167,7 +167,7 @@
             <div class="swiper-pagination swiper-pagination--hero"></div>
             <h1 class="hero__title">KMF <br>и Фонд&nbsp;KMF-Демеу</h1>
             <p class="hero__description">Для нас важно поддерживать социальное предпринимательство</p>
-            <a class="hero__link-main">Подробнее</a>
+            <a class="hero__link-main" href="#">Подробнее</a>
             <div class="hero__button-wrapper">
               <button class="hero__button hero__button--left" type="button"><span class="visually-hidden">Влево.</span></button>
               <button class="hero__button hero__button--right" type="button"><span class="visually-hidden">Вправо.</span></button>
@@ -202,8 +202,8 @@
       <section class="business">
         <div class="business__wrapper main-wrapper">
           <h2 class="business__title">Бизнес</h2>
-          <div class="swiper swiper-business">
-            <div class="swiper-wrapper swiper-wrapper-business">
+          <div class="swiper swiper--business">
+            <div class="swiper-wrapper swiper-wrapper--business">
               <div class="swiper-slide swiper-slide--business">
                 <div class="business__slide-wrapper">
                   <a class="business__slide-link" href="#">
@@ -340,7 +340,7 @@
                   <address class="business__slide-address">Социалистическая 21</address>
                   <details class="business__description-details">
                     <summary class="business__description-short">«Рыжий Рорри» — это крафтовой бар недалеко от станции метро «Лиговский...</summary>
-                    <p class="business__description">«Рыжий Рорри» — это крафтовой бар недалеко от станции метро «Лиговский проспект». Здесь, в апарт-отеле Yes мы наливаем два десятка вариантов пива и настоек, а по технологии су-вид готовим сочные мясные блюда. </p>
+                    <p class="business__description">«Рыжий Рорри» — это крафтовой бар недалеко от станции метро «Лиговский проспект». Здесь, в апарт-отеле Yes мы наливаем два десятка вариантов пива и настоек, а по технологии су-вид готовим сочные мясные блюда.</p>
                   </details>
                 </div>
               </div>
@@ -460,20 +460,20 @@
           <h2 class="education__title">Обучение</h2>
           <div class="swiper swiper--education">
             <div class="swiper-wrapper swiper-wrapper--education">
-              <div class="swiper-slide swiper-slide-education">
+              <div class="swiper-slide swiper-slide--education">
                 <div class="education__slide-wrapper">
                   <h3 class="education__slide-title">Как создать и продвигать бизнес аккаунт в Instagram</h3>
                   <button class="education__slide-button" type="button">Подробнее</button>
                 </div>
               </div>
-              <div class="swiper-slide swiper-slide-education">
+              <div class="swiper-slide swiper-slide--education">
                 <div class="education__slide-wrapper">
                   <h3 class="education__slide-title">Что лучше выбрать – ИП или ТОО</h3>
                   <p class="education__slide-description">Рабиям Серикбаева, аудитор FinEx Audit Company. <br class="education__slide-br">Налоговый консультант, DipIFR ACCA, юрист</p>
                   <button class="education__slide-button" type="button">Подробнее</button>
                 </div>
               </div>
-              <div class="swiper-slide swiper-slide-education">
+              <div class="swiper-slide swiper-slide--education">
                 <div class="education__slide-wrapper">
                   <h3 class="education__slide-title">Домашний бюджет и планирование</h3>
                   <p class="education__slide-description">В этом уроке Вы узнаете, как правильно управлять домашним бюджетом и ставить финансовые цели.</p>
@@ -493,7 +493,7 @@
                 <div class="news__slide-wrapper">
                   <a class="news__slide-link" href="#">
                     <picture>
-                      <source media="(min-width:1920px)" srcset="images/news-award-desktop@1x.webp 1x, images/news-award-desktop@2x.webp 2x" type="image/webp" srcset="" width="264" height="286">
+                      <source media="(min-width:1920px)" srcset="images/news-award-desktop@1x.webp 1x, images/news-award-desktop@2x.webp 2x" type="image/webp" width="264" height="286">
                       <source type="image/webp" srcset="images/news-award-mobile@1x.webp 1x, images/news-award-mobile@2x.webp 2x" width="264" height="286">
                       <source media="(min-width:1920px)" srcset="images/news-award-desktop@1x.jpg 1x, images/news-award-desktop@2x.jpg 2x" type="image/jpeg" width="264" height="286">
                       <img class="news__slide-image" src="images/news-award-mobile@1x.jpg" srcset="images/news-award-mobile@2x.jpg 2x" width="264" height="286" loading="lazy" alt="Участники премии с наградами делают совместное фото">
@@ -506,7 +506,7 @@
                 <div class="news__slide-wrapper">
                   <a class="news__slide-link" href="#">
                     <picture>
-                      <source media="(min-width:1920px)" srcset="images/news-forum-desktop@1x.webp 1x, images/news-forum-desktop@2x.webp 2x" type="image/webp" srcset="" width="264" height="286">
+                      <source media="(min-width:1920px)" srcset="images/news-forum-desktop@1x.webp 1x, images/news-forum-desktop@2x.webp 2x" type="image/webp" width="264" height="286">
                       <source type="image/webp" srcset="images/news-forum-mobile@1x.webp 1x, images/news-forum-mobile@2x.webp 2x" width="264" height="286">
                       <source media="(min-width:1920px)" srcset="images/news-forum-desktop@1x.jpg 1x, images/news-forum-desktop@2x.jpg 2x" type="image/jpeg" width="264" height="286">
                       <img class="news__slide-image" src="images/news-forum-mobile@1x.jpg" srcset="images/news-forum-mobile@2x.jpg 2x" width="264" height="286" loading="lazy" alt="Участники премии с наградами делают совместное фото">
@@ -519,7 +519,7 @@
                 <div class="news__slide-wrapper">
                   <a class="news__slide-link" href="#">
                     <picture>
-                      <source media="(min-width:1920px)" srcset="images/news-momprogram-desktop@1x.webp 1x, images/news-momprogram-desktop@2x.webp 2x" type="image/webp" srcset="" width="264" height="286">
+                      <source media="(min-width:1920px)" srcset="images/news-momprogram-desktop@1x.webp 1x, images/news-momprogram-desktop@2x.webp 2x" type="image/webp" width="264" height="286">
                       <source type="image/webp" srcset="images/news-momprogram-mobile@1x.webp 1x, images/news-momprogram-mobile@2x.webp 2x" width="264" height="286">
                       <source media="(min-width:1920px)" srcset="images/news-momprogram-desktop@1x.jpg 1x, images/news-momprogram-desktop@2x.jpg 2x" type="image/jpeg" width="264" height="286">
                       <img class="news__slide-image" src="images/news-momprogram-mobile@1x.jpg" srcset="images/news-momprogram-mobile@2x.jpg 2x" width="264" height="286" loading="lazy" alt="Участники премии с наградами делают совместное фото">
@@ -532,7 +532,7 @@
                 <div class="news__slide-wrapper">
                   <a class="news__slide-link" href="#">
                     <picture>
-                      <source media="(min-width:1920px)" srcset="images/news-meeting-desktop@1x.webp 1x, images/news-meeting-desktop@2x.webp 2x" type="image/webp" srcset="" width="264" height="286">
+                      <source media="(min-width:1920px)" srcset="images/news-meeting-desktop@1x.webp 1x, images/news-meeting-desktop@2x.webp 2x" type="image/webp" width="264" height="286">
                       <source type="image/webp" srcset="images/news-meeting-mobile@1x.webp 1x, images/news-meeting-mobile@2x.webp 2x" width="264" height="286">
                       <source media="(min-width:1920px)" srcset="images/news-meeting-desktop@1x.jpg 1x, images/news-meeting-desktop@2x.jpg 2x" type="image/jpeg" width="264" height="286">
                       <img class="news__slide-image" src="images/news-meeting-mobile@1x.jpg" srcset="images/news-meeting-mobile@2x.jpg 2x" width="264" height="286" loading="lazy" alt="Участники премии с наградами делают совместное фото">
@@ -547,8 +547,97 @@
       </section>
     </main>
     <footer class="page__footer footer-main">
-
+      <div class="footer-main__wrapper main-wrapper">
+        <h2 class="visually-hidden">Ссылки на наших продукты, партнеров и социальные сети.</h2>
+        <div class="footer-main__social-wrapper">
+          <div class="footer-main__logo-wrapper">
+            <a class="footer-main__logo-link" href="#">
+              <img class="footer-main__logo-image" src="images/logo-kmf-isker.svg" width="105" height="64" alt="логотип компании KMF isker hanymy.">
+            </a>
+            <a class="footer-main__logo-link" href="#">
+              <img class="footer-main__logo-image" src="./images/kmf-demey-logo.svg" width="50" height="52" alt="Логотип компании KMF-Демеу.">
+            </a>
+          </div>
+          <ul class="footer-main__social-list">
+            <li class="footer-main__social-item">
+              <a class="footer-main__social-link" href="#">
+                <span class="visually-hidden">Facebook.</span>
+                <svg class="footer-main__social-image" aria-hidden="true" focusable="false" width="10" height="18">
+                  <use href="icons/stack.svg#kmf-facebook-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-main__social-item">
+              <a class="footer-main__social-link" href="#">
+                <span class="visually-hidden">Telegram.</span>
+                <svg class="footer-main__social-image" aria-hidden="true" focusable="false" width="17" height="15">
+                  <use href="icons/stack.svg#kmf-telegram-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-main__social-item">
+              <a class="footer-main__social-link" href="#">
+                <span class="visually-hidden">Instagram.</span>
+                <svg class="footer-main__social-image" aria-hidden="true" focusable="false" width="16" height="16">
+                  <use href="icons/stack.svg#kmf-instagram-footer"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer-main__navigation-list">
+          <li class="footer-main__navigation-item">
+            <h3 class="footer-main__navigation-title">О портале</h3>
+            <ul class="footer-main__navigation-inner-list">
+              <li class="footer-main__navigation-inner-item">
+                <a class="footer-main__navigation-inner-link" href="#">Продукты КМФ</a>
+              </li>
+              <li class="footer-main__navigation-inner-item">
+                <a class="footer-main__navigation-inner-link" href="#">Новости / Анонсы</a>
+              </li>
+              <li class="footer-main__navigation-inner-item">
+                <a class="footer-main__navigation-inner-link" href="#">О программе KMF Isker Hanymy</a>
+              </li>
+              <li class="footer-main__navigation-inner-item">
+                <a class="footer-main__navigation-inner-link" href="#">Истории успеха</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-main__navigation-item">
+            <h3 class="footer-main__navigation-title">Обучение</h3>
+            <ul class="footer-main__navigation-inner-list">
+              <li class="footer-main__navigation-inner-item">
+                <a class="footer-main__navigation-inner-link" href="#">Наставничество</a>
+              </li>
+              <li class="footer-main__navigation-inner-item">
+                <a class="footer-main__navigation-inner-link" href="#">Саморазвитие</a>
+              </li>
+              <li class="footer-main__navigation-inner-item">
+                <a class="footer-main__navigation-inner-link" href="#">Здоровье</a>
+              </li>
+              <li class="footer-main__navigation-inner-item">
+                <a class="footer-main__navigation-inner-link" href="#">Полезные советы</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-main__navigation-item">
+            <h3 class="footer-main__navigation-title">Бизнес</h3>
+            <ul class="footer-main__navigation-inner-list">
+              <li class="footer-main__navigation-inner-item">
+                <a class="footer-main__navigation-inner-link" href="#">Каталог</a>
+              </li>
+              <li class="footer-main__navigation-inner-item">
+                <a class="footer-main__navigation-inner-link" href="#">Made in KZ</a>
+              </li>
+              <li class="footer-main__navigation-inner-item">
+                <a class="footer-main__navigation-inner-link" href="#">Я социальный предприниматель</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </footer>
+    <script src="scripts/main.js" type="module"></script>
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
